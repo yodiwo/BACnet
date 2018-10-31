@@ -162,8 +162,12 @@ namespace System.IO.BACnet
             const uint IOC_VENDOR = 0x18000000;
             const uint SIO_UDP_CONNRESET = IOC_IN | IOC_VENDOR | 12;
 
-            client?.Client.IOControl(unchecked((int)SIO_UDP_CONNRESET),
-                new[] { System.Convert.ToByte(false) }, null);
+            try
+            {
+                client?.Client.IOControl(unchecked((int)SIO_UDP_CONNRESET),
+                    new[] { System.Convert.ToByte(false) }, null);
+            }
+            catch (Exception ex) { }
         }
 
         protected void Close()
