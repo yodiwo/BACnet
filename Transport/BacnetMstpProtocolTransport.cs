@@ -40,7 +40,7 @@ namespace System.IO.BACnet
         /// <summary>
         /// The minimum time (ms) without a DataAvailable or ReceiveError event that a node must wait for a remote node to begin using a token or replying to a Poll For Master frame:
         /// </summary>
-        public const int T_USAGE_TIMEOUT = 95;
+        public const int T_USAGE_TIMEOUT = 85;
 
         /// <summary>
         /// The maximum time (ms) a node may wait after reception of a frame that expects a reply before sending the first octet of a reply or Reply Postponed frame
