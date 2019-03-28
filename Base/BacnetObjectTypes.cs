@@ -66,6 +66,15 @@ namespace System.IO.BACnet
            compilers will allocate adequate sized datatype for enum
            which is used to store decoding */
 
+        /* Manufacturer specific objects for various devices */
+        OBJECT_YODIWO_CUSTOM_200 = 200,
+        OBJECT_YODIWO_CUSTOM_201 = 201,
+        OBJECT_YODIWO_CUSTOM_207 = 207,
+        OBJECT_YODIWO_CUSTOM_214 = 214,
+        OBJECT_YODIWO_CUSTOM_216 = 216,
+        OBJECT_YODIWO_CUSTOM_217 = 217,
+        /* ------------------------------------------------ */
+
         OBJECT_PROPRIETARY_MIN = 128,
         OBJECT_PROPRIETARY_MAX = 1023,
         MAX_BACNET_OBJECT_TYPE = 1024,
